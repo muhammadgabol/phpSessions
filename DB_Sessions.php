@@ -93,7 +93,7 @@ session_set_save_handler('_Kholna','_BandKarna','_Pharna','_Likhna','_ThabhaKarn
 		ky app asai Situations par Conditions use karain ky errors ka pata chalai
 		*/
 	
-	 if ($_sain_db = mysql_connect("localhost", "root", "MSsain")) {
+	 if ($_sain_db = mysql_connect("localhost", "root", "Pass")) {
 	return mysql_select_db("session_db", $_sain_db);
 	}
 	return FALSE;	
@@ -109,7 +109,7 @@ function _BandKarna()
 		*/
 	global $_sain_db;
 	
-	if($_sain_db = mysql_connect("localhost", "root", "MSsain")){
+	if($_sain_db = mysql_connect("localhost", "root", "pass")){
 	
 	return mysql_close($_sain_db);
 	
